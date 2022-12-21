@@ -1,0 +1,20 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened class="mail-message"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="messages"></mat-icon> Message </mat-drawer>
+    <mat-drawer-content><div class="input-group mb-3">
+        <div class="search-in">
+            <input type="search" id="form1" class="form-control" placeholder="Type query" aria-label="Search" />
+          </div>
+            </div>
+            <mat-divider></mat-divider>
+            <div>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label  *ngIf="showAll; else  showNone" class="form-check-label" for="flexCheckIndeterminate">
+                  None
+                </label>
+              </div>
+              <ng-template  #showNone>
+                All
+              </ng-template>
+        </mat-drawer-content>
+  </mat-drawer-container> 
+
